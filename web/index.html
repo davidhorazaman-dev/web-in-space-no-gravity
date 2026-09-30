@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Unlimited AI Explainer Video Generator</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<main>
+<header>
+  <p class="eyebrow">LOCAL / FREE-FIRST</p>
+  <h1>Unlimited Duration AI Explainer Video Generator</h1>
+  <p>Create long-form explainers without an application-imposed maximum duration.</p>
+</header>
+<section class="card">
+  <label>Title<input id="title" value="My AI Explainer"></label>
+  <label>Topic / prompt<textarea id="prompt" rows="5" placeholder="Explain a topic clearly for a general audience..."></textarea></label>
+  <label>Target duration (seconds)<input id="duration" type="number" min="1" step="1" value="600"></label>
+  <button id="create">Create Project</button>
+</section>
+<section class="card">
+  <h2>Projects</h2>
+  <div id="projects">Loading...</div>
+</section>
+</main>
+<script src="/app.js"></script>
+</body>
+</html>
