@@ -67,7 +67,7 @@ app.delete("/api/projects/:id",(req,res)=>{
   res.status(204).end();
 });
 
-app.get("*",(_req,res)=>res.sendFile(path.join(__dirname,"..","web","index.html")));
+app.use((req,res,next)=>{\n  if (req.path.startsWith("/api/")) return next();\n  res.sendFile(path.join(__dirname,"..","web","index.html"));\n});
 
 function normalizeDuration(value) {
   const seconds = Number(value);
