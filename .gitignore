@@ -1,0 +1,10 @@
+node_modules/
+.env
+data/
+output/
+*.mp4
+*.webm
+*.mov
+*.wav
+*.mp3
+.DS_Store
